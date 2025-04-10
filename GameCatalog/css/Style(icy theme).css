@@ -1,0 +1,238 @@
+body{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    background: linear-gradient(45deg , white , cyan);
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    .game-title{
+        color: rgb(64, 150, 156);
+    }
+    .pagetitle{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size:  45px; 
+        width: 150px;
+        height: auto    ;
+    }
+    h1{
+        color: rgb(64, 150, 156);
+        text-shadow: 3px 4px 1px rgba(59, 59, 59, 2);
+        animation: shadowCreep 3s infinite alternate;
+        
+    }
+    a {
+        color: rgb(64, 150, 156);
+        text-decoration: none;
+        
+       
+      }
+      h2{
+        color: rgb(64, 150, 156);
+        padding-left: 5px;
+        font-size: 35px;
+        text-shadow: 3px 4px 1px rgba(59, 59, 59, 2);
+       
+    }
+    .pagetitle{
+        color: white;
+    }
+}
+
+.wrapper {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.name-and-description{
+    margin-left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 880px;
+    border: 2px solid black;
+    border-right: 1px solid black;
+    height: 250px;  
+    h2{
+        padding-left: 20px; 
+    }
+    p{
+        padding-left: 20px; 
+    }
+    
+    
+}
+
+.ratings{
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    border: 2px solid black;
+    border-left: 1px solid black;
+    height: 250px;
+    
+}
+
+.Catagories {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+        
+        text-align: center;
+        border: 1px solid black;
+        width: 200px;
+        margin: 0px 10px 0px 10px;
+        padding-bottom: 0px;
+    }
+    
+}
+
+
+.Screenshots{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    img{
+        border: 3px solid black;
+        max-width: 50%;
+        height: 200px;
+    }
+}
+
+.systeemeisen{
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    padding-left: 20;
+    ol{
+        padding: 3;
+        list-style: none
+    }
+}
+.recensies{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    padding-left: 20;
+    li{
+        padding: 3;
+        list-style: none
+    }
+}
+
+.dropdown{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    float: right;
+    position: relative;
+    display: inline-block;
+
+    
+}
+.dropdown-button{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.dropdown-menu{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: lightgray;
+    transition: max-height 0.3 ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+    z-index: 1000;
+    li{
+        padding: 10px 20px;
+    }
+    li:hover{
+        background-color: cyan;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+}
+
+
+
+.dropdown:hover .dropdown-menu{
+    max-height: 200px;
+    display: block;
+    animation: frostSpread 4s infinite;
+}
+
+@media screen and (max-width: 1028px) {
+    .wrapper {
+        flex-wrap: wrap; /* Allows elements to stack */
+        align-items: stretch; /* Stretches items to fit new layout */
+    }
+
+    .name-and-description{
+        width: 100%;
+        border: 2px solid black;
+        border-right: 1px solid black;
+        height: 100%;  
+        margin: auto;
+        
+    }
+
+    .ratings {
+        width: 100%; /* Ratings also adapt to full width */
+        margin-bottom: 10px;
+        height: 100%;
+        margin: auto; 
+    }
+
+    .Catagories {
+        width: 100%; /* Ensures categories span full width */
+        margin-top: 10px;
+        justify-content: center;
+        margin: auto;
+    }
+    .Screenshots{
+        margin: auto;
+    }
+    .systeemeisen{
+        margin: auto;
+    }
+    .recensies{
+        margin: auto;
+    }
+}
+
+@keyframes frostSpread {
+    0% {
+      filter: brightness(1) blur(0px);
+    }
+    50% {
+      filter: brightness(1.5) blur(1px);
+    }
+    100% {
+      filter: brightness(1) blur(0px);
+    }
+  }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - arrays, upgrade Papi Gelato</title>`
+</head>
+<body>
+    <script>
+        let array_weekdagen = ["Maandag" , "Dinsdag" , "Woensdag", "Donderdag" , "Vrijdag" , "Zaterdag" , "Zondag"]
+    </script>
+    <h2>Alle dagen van de week zijn:</h2>
+    <div id="Weekdagen"></div>
+    <script>
+        document.getElementById("Weekdagen").innerHTML = array_weekdagen.slice(0, 7).join(", ");
+    </script>
+    <h2>De weekenddagen zijn</h2>
+    <div id="weekenddagen"></div>
+    <script>
+        document.getElementById("weekenddagen").innerHTML = array_weekdagen.slice(5, 7).join(", ");
+    </script>
+    <h2>Alle dagen van de week in omgekeerde volgorde zijn:</h2>
+    <div id="Weekdagen omgedraaid"></div>
+    <script>
+        array_weekdagen.reverse()
+        document.getElementById("Weekdagen omgedraaid").innerHTML = array_weekdagen.slice(0, 7).join(", ");
+    </script>
+    <h2>Alle werkdagen van de week in omgekeerde volgorde zijn:</h2>
+    <div id="Werkdagen omgedraaid"></div>
+    <script>
+        document.getElementById("Werkdagen omgedraaid").innerHTML = array_weekdagen.slice(2, 7).join(", ");
+    </script>
+
+    <h2>De weekenddagen in omgekeerde volgorde zijn:</h2>
+    <div id="weekenddagen omgedraaid"></div>
+    <script>
+        document.getElementById("weekenddagen omgedraaid").innerHTML = array_weekdagen.slice(0, 2).join(", ");
+    </script>
+
+    <h2>De ingevoerde namen in de array zijn:</h2>
+    <div id="namenlijst"></div>
+    <script>
+        namen = []
+        i = 0
+        while(i< 3){
+            let name = prompt("Vul een naam in")
+            namen.push(name)
+            document.getElementById("namenlijst").innerHTML = namen.slice(0, ).join(", ");
+            i++
+        }
+    </script>
+
+    <h2>De ingevoerde namen in de array in omgekeerde volgorde zijn:</h2>
+    <div id="namenlijst omgedraaid"></div>
+    <script>
+        namen.reverse()
+        document.getElementById("namenlijst omgedraaid").innerHTML = namen.slice(0, 3).join(", ");
+    </script>
+</body>
+</html>

@@ -18,12 +18,12 @@ body{
     height: 1px; 
 }
 
-.ingrediënten , .ingrediënten li{
+.ingrediënten , li{
     list-style:disc;
     margin-bottom: 10px;
 }
 
-.bereidingstappen, .bereidingstappen li{
+.bereidingstappen, li{
     list-style: decimal;
     margin-bottom: 20px;
 }
@@ -44,7 +44,7 @@ p{
 img{
     margin-bottom: 15px ;
     height: 500px;
-    width:  500px 
+    width:  500px;
 }
 .ProTip{
     border: 4px solid ;
@@ -68,6 +68,7 @@ img{
     float: right;
     position: relative;
     display: inline-block;
+    
 }
 .dropdown-button{
     width: 150px;

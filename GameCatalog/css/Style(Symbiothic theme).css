@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+    scrollbar-width: 0px;
+}
+
+
+body{
+    color: lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    background: linear-gradient(45deg, darkred , #B33F40 ,  rgb(15, 14, 14));
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    .game-title{
+        color: rgb(138, 20, 20);
+        text-shadow: 3px 4px 1px rgba(59, 59, 59, 2);
+    }
+    .pagetitle{
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size:  45px; 
+        width: 150px;
+        height: auto    ;
+    }
+    h1{
+        color: silver;
+        text-shadow: 3px 4px 1px rgba(59, 59, 59, 2);
+        animation: shadowCreep 3s infinite alternate;
+        
+    }
+    a {
+        color: rgb(138, 20, 20);
+        text-decoration: none;
+        text-shadow: 3px 4px 1px rgba(59, 59, 59, 2);
+        animation: shadowCreep 3s infinite alternate;
+      }
+      h2{
+        color: crimson;
+        padding-left: 5px;
+        font-size: 35px;
+        text-shadow: 3px 4px 1px rgba(59, 59, 59, 2);
+        animation: shadowCreep 3s infinite alternate;
+       
+    }
+}
+
+.wrapper {
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+
+}
+
+.name-and-description{
+    margin-left: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 880px;
+    border: 2px solid black;
+    border-right: 1px solid black;
+    height: 250px;  
+    h2{
+        padding-left: 20px; 
+    }
+    p{
+        padding-left: 20px; 
+    }
+    
+    
+}
+
+.ratings{
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    border: 2px solid black;
+    border-left: 1px solid black;
+    height: 250px;
+    
+}
+
+.Catagories {
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+        text-align: center;
+        border: 1px solid black;
+        width: 200px;
+        margin: 0px 10px 0px 10px;
+        padding-bottom: 0px;
+    }
+    
+}
+
+
+.Screenshots{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px;
+    img{
+        border: 3px solid black;
+        max-width: 50%;
+        height: 200px;
+    }
+}
+
+.systeemeisen{
+
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid black;
+    padding-left: 20;
+    ol{
+        padding: 3;
+        list-style: none
+    }
+}
+.recensies{
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    padding-left: 20;
+    li{
+        padding: 3;
+        list-style: none
+    }
+}
+
+.dropdown{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    float: right;
+    position: relative;
+    display: inline-block;
+
+    
+}
+.dropdown-button{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    background-color: rgb(156, 37, 37);
+    color: silver;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    animation: symbioticPulse 5s infinite; 
+}
+
+.dropdown-menu{
+    color: silver;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 150px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+    position: absolute;
+    background-color: rgb(116, 29, 29);
+    transition: max-height 0.3 ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 1);
+    z-index: 1000;
+    li{
+        padding: 10px 20px;
+    }
+    li:hover{
+        background-color: maroon;
+    }
+    a{
+        text-decoration: none;
+        color:silver;
+    }
+}
+
+
+
+.dropdown:hover .dropdown-menu{
+    max-height: 200px;
+    display: block;
+    animation: symbioticPulse 1.5s infinite;
+}
+
+@media screen and (max-width: 1028px) {
+    .wrapper {
+        flex-wrap: wrap;
+        align-items: stretch;
+    }
+
+    .name-and-description{
+        width: 100%;
+        border: 2px solid black;
+        border-right: 1px solid black;
+        height: 100%;  
+        margin: auto;
+        
+    }
+
+    .ratings {
+        width: 100%; 
+        margin-bottom: 10px;
+        height: 100%;
+        margin: auto; 
+    }
+
+    .Catagories {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+        margin: auto;
+    }
+    .Screenshots{
+        margin: auto;
+    }
+    .systeemeisen{
+        margin: auto;
+    }
+    .recensies{
+        margin: auto;
+    }
+}
+@keyframes symbioticPulse {
+    0% {
+      box-shadow: 0 0 20px red;
+    }
+    25% {
+        box-shadow: 0 0 40px rgb(199, 16, 53);
+      }
+    50% {
+      box-shadow: 0 0 40px rgb(156, 17, 45);
+    }
+    75% {
+        box-shadow: 0 0 40px rgb(83, 8, 23);
+      }
+    100% {
+      box-shadow: 0 0 90px rgb(0, 0, 0);
+    }
+  }
+
+  /*temp*/
+
+@keyframes tentacleFlow {
+    0% {
+      transform: scale(1) rotate(0deg);
+    }
+    50% {
+      transform: scale(1.1) rotate(5deg);
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+    }
+  }

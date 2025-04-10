@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fibonacci reeks</title>
+</head>
+<body>
+    <script id="fibonacci">
+        function make_fibonacci_reeks(Repeat){
+            let start_numbers = [0,1] //array with the start numbers
+            for(let i = 2; i<Repeat; i++){ // for loop to make the actual reeks
+                start_numbers [i] = start_numbers[i-1] + start_numbers[i-2]; // the formula for creating the reeks made with the index from the array start_numbers
+
+            }
+            return start_numbers // return the complete array
+        }
+        console.log(make_fibonacci_reeks(20)) // run function
+        
+
+    </script>
+    
+</body>
+</html>

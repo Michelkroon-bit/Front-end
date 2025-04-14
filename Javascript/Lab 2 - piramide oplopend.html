@@ -1,0 +1,24 @@
+<Doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - rekenen met 2 arrays</title>
+</head>
+<body>
+<h2>Oplopende piramide</h2>
+<div id="pyramid-output"></div>
+<script>
+    let userinput = prompt("Vul een getal in")
+    let Maximum_number = parseInt(userinput)
+
+    let pyramid = ""
+    for(let i = 1; i <= Maximum_number; i++){
+        pyramid += Array.from({length:i}, (_, index)=> index +1).join(" ")+ "<br>"
+        
+    }
+
+    document.getElementById("pyramid-output").innerHTML=pyramid
+</script>
+</body>
+</html>

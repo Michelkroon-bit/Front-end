@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Vermenigvuldigen van de 2 arrays</h2>
+    <div id="Vermenigvuldigen van de nummers"></div>
+    <script>
+        let Number_array_1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let Number_array_2 = [2, 4, 6, 8];
+        let results3 = "";
+
+        for (let multiplier of Number_array_2) { // Loop through multipliers (2, 4, 6, 8)
+            results3 += "Tafel van "+ multiplier +":<br>"; 
+            for (let number of Number_array_1 ) { // Loop through numbers 1–10
+                results3 += number + " x " + multiplier +"=" + number * multiplier +"<br>"; 
+            }
+            results3 += "<br>"; 
+        }
+
+        document.getElementById("Vermenigvuldigen van de nummers").innerHTML = results3;
+</script>
+</body>
+</html>

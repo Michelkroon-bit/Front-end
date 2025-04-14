@@ -42,10 +42,21 @@
     <script>
         namen = []
         i = 0
-        while(i< 3){
+        let hoeveelheid_namen = prompt("hoeveel namen wilt u invullen?");
+        doorgaan = false
+        while(doorgaan == false){
+        if(hoeveelheid_namen < 3){
+            alert("minimum of 3 names")
+            hoeveelheid_namen = prompt("hoeveel namen wilt u invullen?")
+        }else{
+            break
+        }
+    }
+
+        while(i < hoeveelheid_namen){
             let name = prompt("Vul een naam in")
             namen.push(name)
-            document.getElementById("namenlijst").innerHTML = namen.slice(0, ).join(", ");
+            document.getElementById("namenlijst").innerHTML = namen.slice(0, i+1).join(", ");
             i++
         }
     </script>
@@ -54,7 +65,7 @@
     <div id="namenlijst omgedraaid"></div>
     <script>
         namen.reverse()
-        document.getElementById("namenlijst omgedraaid").innerHTML = namen.slice(0, 3).join(", ");
+        document.getElementById("namenlijst omgedraaid").innerHTML = namen.slice(0, i).join(", ");
     </script>
 </body>
 </html>

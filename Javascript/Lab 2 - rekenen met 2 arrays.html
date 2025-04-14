@@ -1,0 +1,54 @@
+<Doctype HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 2 - rekenen met 2 arrays</title>
+</head>
+<body>
+    <script>
+        Number_array_1 = [1,2,3,4,5,6,7,8,9,10];
+        Number_array_2 = [2,4,6,8,10,12,14,16,18,20];
+    </script>
+
+    <h2>Optellen van de 2 arrays</h2>
+    <div id="optellen van de nummers"></div>
+    <script>
+        let results = ""; 
+        for (let i = 0; i < Number_array_1.length; i++) {
+            results += Number_array_1[i] + " + " + Number_array_2[i] + " = " + (Number_array_1[i] + Number_array_2[i]) + "<br>"; // Format the output
+        }
+    document.getElementById("optellen van de nummers").innerHTML = results; 
+</script>
+
+<h2>Aftrekken van de 2 arrays</h2>
+    <div id="Aftrekken van de nummers"></div>
+    <script>
+        let results2 = ""; 
+        for (let i = 0; i < Number_array_1.length; i++) {
+            results2 += Number_array_1[i] + " - " + Number_array_2[i] + " = " + (Number_array_1[i] - Number_array_2[i]) + "<br>"; // Format the output
+        }
+    document.getElementById("Aftrekken van de nummers").innerHTML = results2; 
+</script>
+
+<h2>Vermenigvuldigen van de 2 arrays</h2>
+    <div id="Vermenigvuldigen van de nummers"></div>
+    <script>
+        let results3 = ""; 
+        for (let i = 0; i < Number_array_1.length; i++) {
+            results3 += Number_array_1[i] + " X " + Number_array_2[i] + " = " + (Number_array_1[i] * Number_array_2[i]) + "<br>"; // Format the output
+        }
+    document.getElementById("Vermenigvuldigen van de nummers").innerHTML = results3; 
+</script>
+
+<h2>Delen van de 2 arrays</h2>
+    <div id="Delen van de nummers"></div>
+    <script>
+        let results4 = ""; 
+        for (let i = 0; i < Number_array_1.length; i++) {
+        results4 += Number_array_2[i] + " / " + Number_array_1[i] + " = " + (Number_array_2[i] / Number_array_1[i]) + "<br>"; // Format the output
+    }
+    document.getElementById("Delen van de nummers").innerHTML = results4; 
+</script>
+</body>
+</html>

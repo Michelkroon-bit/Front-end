@@ -1,0 +1,21 @@
+#container {
+    border-top: 20px solid gray;
+    border-bottom: 20px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    width: 100%; 
+    margin: auto; 
+    background-color: gray;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+button {
+    width: 100px;
+    height: 80px;
+    background-color: green;
+}

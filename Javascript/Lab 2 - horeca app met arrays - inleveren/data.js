@@ -1,14 +1,11 @@
-const BEDANKT_EN_TOT_ZIENS = 'Bedankt en tot ziens'
-const SORRY_IK_BEGRIJP_HET_NIET = 'Sorry ik begrijp het niet'
-const U_MOET_WEL_EEN_GETAL_BOVEN_DE_0_INVOEREN = 'U moet wel een getal boven de 0 invoeren'
-const SORRY_ZULKE_GROOTTE_BAKJES_VERKOPEN_WIJ_NIET = 'Sorry , zulke grote bakken hebben we niet'
+export const zinnen_lijst = ['Bedankt en tot ziens' ,'Sorry ik begrijp het niet' , 'U moet wel een getal boven de 0 invoeren','Sorry , zulke grote bakken hebben we niet' ]
 
-const PRIJS_PER_BOLLETJES = 1.10
-const HOORNTJE = 1.25
-const BAKJES = 0.75
 
-let bestellingen_lijst = []
+export let waardelijst = {"PRIJS_PER_BOLLETJES":1.10 ,"HOORNTJE":1.25,"BAKJES":0.75 }
 
-let bestelling_count = 0
-let bestelling_string = "bestelling "+bestelling_count
-let bestelling = {}
+
+export let bestellingen_lijst = {"Aantal_bolletjes":0 ,"Hoorntje_of_bakje":""}
+
+export let bestelling_count = 0
+export let bestelling_string = "bestelling "+bestelling_count
+export let bestelling = {}

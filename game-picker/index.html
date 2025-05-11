@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Game picker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="Page-title"><strong>Overzicht</strong></h1>
+    <div class="game-picker">
+    <select value = "Alle genres" id = "Genre-Dropdown">
+    </select>
+    <button id="submit_genre" type="submit">OK</button>
+
+
+    <input type="number" id="price-input" placeholder="price">
+    <button id="submit_price" type="submit">OK</button>
+
+
+    <button id="Clear" type="submit">Clear filters</button>
+    </div>
+    <div class ="Main-content-list" id="main-container">
+    </div>
+
+    <div id="cart-container">
+        <h1>Shopping Cart</h1>
+        <p id="cart-items"></p> 
+        <p id="cart-total">Total: €0.00</p>
+        <button class="AddToCartButton" id="clear-cart">Clear Cart</button>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
